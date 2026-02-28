@@ -124,7 +124,7 @@ jobs:
       - name: Prepare YouTube iPA
         id: prepare_youtube
         run: |
-          cp com.google.ios.youtube_21.08.3_und3fined.ipa main/YouTube.ipa
+          run: cp main/com.google.ios.youtube_21.08.3_und3fined.ipa main/YouTube.ipa
           cd ${{ github.workspace }}/main
           mv YouTube.ipa YouTube.zip
           unzip -q YouTube.zip
